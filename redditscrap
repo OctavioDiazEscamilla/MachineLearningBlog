@@ -11,7 +11,7 @@ import os
 from wordcloud import WordCloud, STOPWORDS
 currdir = os.path.dirname(__file__)
 stopwords = set(STOPWORDS)
-titulo = []
+title = []
 comment = []
 
 reddit = praw.Reddit(client_id = '',
@@ -30,7 +30,7 @@ for submission in hot1:
         #title.append(submission.title)
         comment.append(submission.selftext)
 
-commentDF = pd.DataFrame({#'titulo': titulo, 
+commentDF = pd.DataFrame({#'title': title, 
                              'comment': comment})
 
 string = commentDF.to_string()
