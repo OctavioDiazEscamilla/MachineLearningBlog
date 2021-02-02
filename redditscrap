@@ -33,7 +33,7 @@ for submission in hot1:
 commentDF = pd.DataFrame({#'titulo': titulo, 
                              'comment': comment})
 
-string = comment.to_string()
+string = commentDF.to_string()
 
 
 wc = WordCloud(background_color="white", max_words=100, stopwords = stopwords)
