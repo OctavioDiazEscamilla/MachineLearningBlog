@@ -14,10 +14,10 @@ stopwords = set(STOPWORDS)
 titulo = []
 comment = []
 
-reddit = praw.Reddit(client_id = '-73NBm6rBipz6Q',
-                     client_secret = 'g14PfYkXLE1ADACl8zNd7s98jwERJw',
-                     username = 'finasensei',
-                     password = 'finasensei2021',
+reddit = praw.Reddit(client_id = '',
+                     client_secret = '',
+                     username = '',
+                     password = '',
                      user_agent ='finasensei')
 
 wallstreetbets = reddit.subreddit('wallstreetbets')
